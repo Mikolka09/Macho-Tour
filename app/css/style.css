@@ -4,10 +4,7 @@ body {
     line-height: 1.1;
     background-color: azure;
     transition: all 0.5s ease-out;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
+
 }
 
 *,
@@ -69,13 +66,13 @@ body {
 
 .header__icons {
     position: absolute;
-    left: 1100px;
+    left: 70%;
 
 }
 
 .header__img {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 5vh;
     width: 25px;
     padding: 3px;
     height: auto;
@@ -83,7 +80,7 @@ body {
 }
 
 .header__img:hover {
-    background-color:rgba(253, 225, 182, 0.932);
+    background-color: rgba(253, 225, 182, 0.932);
     border-radius: 50%;
 }
 
@@ -137,4 +134,17 @@ body {
     display: block;
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+@media screen and (min-width:850px){
+    .header__icons{
+        display: inline-block;
+    }
+}
+
+@media (min-width:600px) 
+and (max-width:850px) {
+    .header__icons{
+        display: none;
+    }
 }
