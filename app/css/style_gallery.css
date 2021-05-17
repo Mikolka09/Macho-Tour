@@ -27,7 +27,16 @@
     position: relative;
     margin-top: 12px;
     margin-bottom: 10px;
-    max-width: 100%;
+}
+
+.header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    top: 50px;
 }
 
 .header__container {
@@ -65,6 +74,10 @@
     transition: all 0.2s linear;
 }
 
+.header__nav__st {
+    color: coral;
+}
+
 .header__nav__link:hover {
     color: coral;
 }
@@ -88,60 +101,85 @@
     background-color: rgba(253, 225, 182, 0.932);
 }
 
+
 /* Container */
 .container {
     display: flex;
-    align-items: center;
     justify-content: center;
-    justify-items: center;
-    position: relative;
+    align-items: center;
+    flex-wrap: nowrap;
     width: 100%;
-    height: 668px;
-    border-top: 1px solid lightgray;
-
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: center;
 }
 
 .container__block {
-    display: flex;
-    align-items: center;
-    width: 50%;
-    height: 667px;
-    text-align: justify;
-}
-
-.container__text {
-    display: block;
-    width: 85%;
-    margin: 0 auto;
-}
-
-.container__button {
-    display: inline-block;
-    vertical-align: center;
-    background-color: white;
-    border: 2px solid gray;
-    color: gray;
-    padding: 10px 20px;
-    border-radius: 6px;
-    font-size: 10pt;
-    font-weight: 700;
-    text-decoration: none;
-    transition: all 0.2s linear;
-}
-
-.container__button:hover {
-    background-color: bisque;
-    color: black;
-    border-color: black;
-}
-
-.container__picture {
-    background-image: url(../images/fotos/egipet2.jpg);
-    width: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding: 0;
     background-size: cover;
-    height: 668px;
+    background-repeat: no-repeat;
+}
+
+.container__img1 {
+    background-image: url(../images/fotos/over-the-river.jpg);
+}
+
+.container__img2 {
+    background-image: url(../images/fotos/board.jpg);
+}
+
+.container__img3 {
+    background-image: url(../images/fotos/over-the-river.jpg);
+}
+
+.container__img4 {
+    background-image: url(../images/fotos/rive.jpg);
+}
+
+.container__textblock {
+    text-align: center;
+    margin-top: 120px;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.container__textblock:hover {
+    opacity: 1;
+}
+
+.container__item1 {
+    font-size: 22pt;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.container__item2 {
+    font-size: 14pt;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.container__item3 {
+    font-size: 20pt;
+    font-weight: 700;
+    margin-bottom: 80px;
+    border: 1px solid white;
+    width: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-decoration: none;
+    color:white;
+}
+
+.container__item3:hover{
+    background-color:rgba(255, 255, 255, 0.425);
 }
 
 @media screen and (min-width:850px) {
