@@ -17,7 +17,16 @@ body {
     position: relative;
     margin-top: 12px;
     margin-bottom: 10px;
-    max-width: 100%;
+}
+
+.header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    top: 50px;
 }
 
 .header__container {
@@ -55,6 +64,10 @@ body {
     transition: all 0.2s linear;
 }
 
+.header__nav__st {
+    color: coral;
+}
+
 .header__nav__link:hover {
     color: coral;
 }
@@ -80,23 +93,39 @@ body {
 
 /* Container */
 .container {
+    display: block;
+    position: relative;
+    width: 100%;
+
+}
+
+.container__block1 {
     display: flex;
     align-items: center;
     justify-content: center;
     justify-items: center;
     position: relative;
     width: 100%;
-    height: 668px;
-    border-top: 1px solid lightgray;
-
+    height: 335px;
+    text-align: justify;
+    border-bottom: 1px solid lightgray;
 }
 
-.container__block {
+.container__block2 {
     display: flex;
     align-items: center;
-    width: 50%;
-    height: 667px;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    width: 100%;
+    height: 334px;
     text-align: justify;
+}
+
+.container__blocktext {
+    position: relative;
+    margin: 0 auto;
+    width: 67%;
 }
 
 .container__text {
@@ -126,13 +155,18 @@ body {
 }
 
 .container__picture {
-    background-image: url(../images/fotos/egipet2.jpg);
-    width: 50%;
+    background-image: url(../images/fotos/rive.jpg);
+    width: 33%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 668px;
+    height: 334px;
 }
+
+.container__picture2{
+    background-image: url(../images/fotos/rezhim.jpg);
+}
+
 
 @media screen and (min-width:850px) {
     .header__icons {
