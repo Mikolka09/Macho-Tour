@@ -33,7 +33,73 @@
     </header>
     <h1 align="center">Write to us</h1>
     <div class="container">
-        
+        <form class="container__form">
+            <div class="container__block1">
+                <div class="container__item1">
+                    <label for="name"><b>Name:</b></label>
+                    <div><input class="container__name" type="text" id="name" placeholder="Name"></div>
+                </div>
+                <div class="container__item1">
+                    <label for="email"><b>Email:</b></label>
+                    <div><input class="container__email" type="email" id="email" placeholder="Email@gmail.com"></div>
+                </div>
+                <div class="container__item1">
+                    <label for="phone"><b>Phone:</b></label>
+                    <div><input class="container__phone" type="phone" id="phone" placeholder="+380507895621"></div>
+                </div>
+            </div>
+            <div class="container__block2">
+                <p>
+                    <label><b>Contact me via:</b></label>
+                    <input class="container__radio1" type="radio" id="mail">
+                    <label for="mail"><b>Email</b></label>
+                    <input class="container__radio2" type="radio" id="phone">
+                    <label for="telega"><b>Phone</b></label>
+                    <input class="container__radio3" type="radio" id="telega">
+                    <label for="telega"><b>Telegram</b></label>
+                </p>
+            </div>
+            <div class="container__block3">
+                <div class="container__item4">
+                    <label for="topic"><b>Topic:</b></label>
+                    <div>
+                        <select class="container__topic" id="topic" type="group">
+                            <option selected>Post my story</option>
+                            <option>Story-1</option>
+                            <option>Story-2</option>
+                            <option>Story-3</option>
+                            <option>Story-4</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="container__item5">
+                        <label for="message"><b>Message:</b></label>
+                        <div>
+                            <textarea class="container__message" id="message"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="container__item6">
+                    <div>
+                        <input class="container__check" type="checkbox" id="check">
+                        <label for="message"><b>I am a human</b></label>
+                    </div>
+                    <div>
+                        <input class="container__button" type="submit" value="SEND">
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="container__icon">
+            <div class="header__icons container__icon">
+                <a href="#"><img class="header__img container_img" src="app/images/icon/twitter-128.png" alt="twitter"></a>
+                <a href="#"><img class="header__img container_img" src="app/images/icon/facebook-128.png" alt="facebook"></a>
+                <a href="#"><img class="header__img container_img" src="app/images/icon/instagram-2-128.png" alt="instagram-2"></a>
+                <a href="#"><img class="header__img container_img" src="app/images/icon/youtube-128.png" alt="youtube"></a>
+                <a href="#"><img class="header__img container_img" src="app/images/icon/gmail-128.png" alt="gmail"></a>
+            </div>
+        </div>
     </div>
 </body>
 
